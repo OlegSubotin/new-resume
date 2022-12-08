@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon shortcut" href="./images/code-icon.png" type="image/ico" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Oleh Subotin | About</title>
   </head>
   <body>
-    <header>
-      <div class="container">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo">Oleh Subotin</a>
           <ul class="header-navigation-list">
@@ -36,20 +46,28 @@
     <main>
       <!-- HERO SECTION -->
       <section class="hero-section">
-        <div class="container">
-          <h1 class="hero-title">
-            Full Stack Engineer <br />
-            using MERN stack
-          </h1>
-          <p class="hero-text">Web Development</p>
-          <button type="button" class="hero-button">Contact me</button>
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Full Stack Engineer <br />
+              using MERN stack
+            </h1>
+            <p class="hero-text">Web Development</p>
+            <button type="button" class="hero-button">Contact me</button>
+          </div>
+          <img
+            class="hero-image"
+            src="./images/hero/oleh-subotin.jpg"
+            alt="Oleh Subotin photo"
+            width="322"
+          />
         </div>
       </section>
       <!-- ABOUT SECTION -->
       <section class="about-section">
         <div class="container">
           <h2 class="about-title">About me</h2>
-          <img src="./images/oleh-subotin.jpg" alt="Oleh Subotin photo" width="370" />
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi delectus, tempora labore
             dolore illo quibusdam blanditiis commodi sapiente suscipit aut, vitae nesciunt
@@ -94,81 +112,85 @@
       </section>
       <!-- EXPERIENCE SECTION -->
       <section class="experience">
-        <h2 class="experience-title">My experience</h2>
-        <h3 class="experience-sub-title">IT experience</h3>
-        <ul class="experience-list">
-          <li class="experience-item">
-            <img src="./images/experience/self-employment.jpg" alt="self employed" width="370" />
-            <p class="experience-item-company">Freelance</p>
-            <h4 class="experience-item-position">
-              Full Stack Engineer | <span class="experience-item-period">04.22 - now</span>
-            </h4>
-            <p class="experience-item-skills">
-              <span class="experience-item-skills-accent">Skills:</span>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, porro.
-            </p>
-          </li>
-          <li class="experience-item">
-            <img
-              src="./images/experience/mentor.jpg"
-              alt="self employed full stack engineer"
-              width="370"
-            />
-            <p class="experience-item-company">GoIT</p>
-            <h4 class="experience-item-position">
-              Full Stack Engineer / Mentor | <span class="experience-item-period">09.22 - now</span>
-            </h4>
-            <p class="experience-item-skills">
-              <span class="experience-item-skills-accent">Skills:</span>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, porro.
-            </p>
-          </li>
-          <li class="experience-item">
-            <img
-              src="./images/experience/internship.jpg"
-              alt="full stack engineer and mentor"
-              width="370"
-            />
-            <p class="experience-item-company">Unicorn</p>
-            <h4 class="experience-item-position">
-              Intern Full Stack Engineer | <span class="experience-item-period">09.22 - 10.22</span>
-            </h4>
-            <p class="experience-item-skills">
-              <span class="experience-item-skills-accent">Skills:</span>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, porro.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="experience-title">My experience</h2>
+          <h3 class="experience-sub-title">IT experience</h3>
+          <ul class="experience-list">
+            <li class="experience-item">
+              <img src="./images/experience/self-employment.jpg" alt="self employed" width="370" />
+              <p class="experience-item-company">Freelance</p>
+              <h4 class="experience-item-position">
+                Full Stack Engineer | <span class="experience-item-period">04.22 - now</span>
+              </h4>
+              <p class="experience-item-skills">
+                <span class="experience-item-skills-accent">Skills:</span>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, porro.
+              </p>
+            </li>
+            <li class="experience-item">
+              <img
+                src="./images/experience/mentor.jpg"
+                alt="self employed full stack engineer"
+                width="370"
+              />
+              <p class="experience-item-company">GoIT</p>
+              <h4 class="experience-item-position">
+                Full Stack Engineer / Mentor |
+                <span class="experience-item-period">09.22 - now</span>
+              </h4>
+              <p class="experience-item-skills">
+                <span class="experience-item-skills-accent">Skills:</span>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, porro.
+              </p>
+            </li>
+            <li class="experience-item">
+              <img
+                src="./images/experience/internship.jpg"
+                alt="full stack engineer and mentor"
+                width="370"
+              />
+              <p class="experience-item-company">Unicorn</p>
+              <h4 class="experience-item-position">
+                Intern Full Stack Engineer |
+                <span class="experience-item-period">09.22 - 10.22</span>
+              </h4>
+              <p class="experience-item-skills">
+                <span class="experience-item-skills-accent">Skills:</span>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, porro.
+              </p>
+            </li>
+          </ul>
 
-        <h3 class="experience-sub-title">Before IT experience</h3>
-        <ul>
-          <li class="experience-item">
-            <img src="./images/experience/tutor.jpg" alt="English tutor" width="370" />
-            <p class="experience-item-company">JustSchool</p>
-            <h4 class="experience-item-position">
-              English Tutor | <span class="experience-item-period">03.20 - 02.22</span>
-            </h4>
-            <p class="experience-item-skills">
-              <span class="experience-item-skills-accent">Skills:</span>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, porro.
-            </p>
-          </li>
-          <li class="experience-item">
-            <img
-              src="./images/experience/waiter.jpg"
-              alt="full stack engineer and mentor"
-              width="370"
-            />
-            <p class="experience-item-company">Red Lobster / Sushiya</p>
-            <h4 class="experience-item-position">
-              Server | <span class="experience-item-period">05.18 - 09.19</span>
-            </h4>
-            <p class="experience-item-skills">
-              <span class="experience-item-skills-accent">Skills:</span>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, porro.
-            </p>
-          </li>
-        </ul>
+          <h3 class="experience-sub-title">Before IT experience</h3>
+          <ul>
+            <li class="experience-item">
+              <img src="./images/experience/tutor.jpg" alt="English tutor" width="370" />
+              <p class="experience-item-company">JustSchool</p>
+              <h4 class="experience-item-position">
+                English Tutor | <span class="experience-item-period">03.20 - 02.22</span>
+              </h4>
+              <p class="experience-item-skills">
+                <span class="experience-item-skills-accent">Skills:</span>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, porro.
+              </p>
+            </li>
+            <li class="experience-item">
+              <img
+                src="./images/experience/waiter.jpg"
+                alt="full stack engineer and mentor"
+                width="370"
+              />
+              <p class="experience-item-company">Red Lobster / Sushiya</p>
+              <h4 class="experience-item-position">
+                Server | <span class="experience-item-period">05.18 - 09.19</span>
+              </h4>
+              <p class="experience-item-skills">
+                <span class="experience-item-skills-accent">Skills:</span>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, porro.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- EDUCATION SECTION -->
       <section class="education-section">
