@@ -47,6 +47,13 @@ img {
   margin: 0 auto;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  display: none;
+}
+
 /* HEADER */
 
 .header {
@@ -239,9 +246,11 @@ img {
 }
 
 .hero-button {
+  text-align: center;
   font-family: Mulish;
   padding: 10px 20px;
   display: block;
+  width: 150px;
   margin: 30px auto 0;
   border-radius: 20px;
   border: none;
@@ -265,13 +274,6 @@ img {
 
 .hero-image {
   border-radius: 20px;
-  cursor: pointer;
-  transition: transform 800ms var(--time-function);
-}
-
-.hero-image:hover,
-.hero-image:focus {
-  transform: rotateY(180deg);
 }
 
 /* ABOUT */
@@ -541,6 +543,7 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: space-around;
 }
 
 .footer-logo {
@@ -589,8 +592,34 @@ img {
   margin-right: 15px;
 }
 
-.footer-right {
-  margin-left: 90px;
+.footer-navigation-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-navigation-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: #ebf0f2;
+  display: flex;
+  align-items: center;
+  transition: color var(--time) var(--time-function);
+}
+
+.footer-navigation-link:hover,
+.footer-navigation-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-current {
+  color: var(--accent-color);
 }
 
 .footer-title {
@@ -640,7 +669,7 @@ img {
 /* PROJECTS */
 
 .projects-section {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .projects-title {
@@ -783,5 +812,130 @@ img {
 .projects-item-text {
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.32;
+}
+
+/* CONTACTS */
+.contact-section {
+  padding: 60px 0;
+}
+
+.contact-form {
+  padding: 40px;
+  margin: 0 auto;
+  width: 500px;
+  background-color: #dfe2de;
+  border-radius: 20px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.form-element-wrapper:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form-element-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-element-label {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+  display: block;
+  margin-bottom: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.form-element-input {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 20px;
+  padding: 12px 30px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: border-color var(--timing) var(--timing-function);
+}
+
+.form-element-input:placeholder {
+  font-size: 20px;
+  line-height: 1.23;
+  color: #b46088;
+}
+
+.form-element-input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+  color: var(--primary-text-color);
+  font-weight: normal;
+  font-size: 20px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+}
+
+.form-submit-button {
+  font-family: Mulish;
+  padding: 10px 20px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--accent-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+  transition: background-color var(--time) var(--time-function),
+    box-shadow var(--time) var(--time-function);
+}
+
+.form-submit-button:hover,
+.form-submit-button:focus {
+  background-color: #bb944d;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* POPUP */
+.overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--timing) var(--timing-function),
+    visibility var(--timing) var(--timing-function);
+}
+
+.popup {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  background-color: var(--accent-color);
+  border-radius: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-text {
+  font-size: 24px;
+  font-weight: 700;
   line-height: 1.32;
 }

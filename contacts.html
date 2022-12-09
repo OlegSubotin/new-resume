@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon shortcut" href="./images/code-icon.png" type="image/ico" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Oleh Subotin | Contact</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a href="./index.html" class="header-logo">Oleh Subotin</a>
+          <ul class="header-navigation-list">
+            <li class="header-navigation-item">
+              <a href="./index.html" class="header-navigation-link">About</a>
+            </li>
+            <li class="header-navigation-item">
+              <a href="./projects.html" class="header-navigation-link">Projects</a>
+            </li>
+            <li class="header-navigation-item">
+              <a href="./contacts.html" class="header-navigation-link current">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li class="header-contact-item">
+            <a href="tel:+380508736717" class="header-contact-link">
+              <svg class="header-contact-icon" width="16px" height="16px">
+                <use href="images/sprite.svg#icon-phone"></use>
+              </svg>
+              +38-(050)-873-67-17
+            </a>
+          </li>
+          <li class="header-contact-item">
+            <a href="mailto:subotinoleg0@gmail.com" class="header-contact-link">
+              <svg class="header-contact-icon" width="16px" height="16px">
+                <use href="images/sprite.svg#icon-envelop"></use>
+              </svg>
+              subotinoleg0@gmail.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="contact-section">
+        <div class="container">
+          <form class="contact-form js-form">
+            <div class="form-element-wrapper">
+              <label class="form-element-label" for="name">Name</label>
+              <input
+                class="form-element-input"
+                type="text"
+                required
+                name="name"
+                placeholder="Joseph"
+                id="name"
+                autofocus
+              />
+            </div>
+            <div class="form-element-wrapper">
+              <label class="form-element-label" for="subject">Subject</label>
+              <input
+                class="form-element-input"
+                type="text"
+                required
+                name="subject"
+                placeholder="Want to say hello"
+                id="subject"
+              />
+            </div>
+            <div class="form-element-wrapper">
+              <label class="form-element-label" for="message">Message</label>
+              <input
+                class="form-element-input"
+                type="text"
+                required
+                name="message"
+                placeholder="Hi! How are you doing?"
+                id="message"
+              />
+            </div>
+            <div class="form-element-wrapper">
+              <label class="form-element-label" for="phone">Phone number</label>
+              <input
+                class="form-element-input"
+                required
+                name="phone"
+                class="contact-form-input"
+                type="tel"
+                placeholder="+xx-(xxx)-xxx-xx-xx"
+                id="phone"
+              />
+            </div>
+            <div class="form-element-wrapper">
+              <label class="form-element-label" for="mail">Mail</label>
+              <input
+                class="form-element-input"
+                required
+                name="mail"
+                class="contact-form-input"
+                type="mail"
+                placeholder="josephdev@mail.com"
+                id="mail"
+              />
+            </div>
+            <button type="submit" class="form-submit-button">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-section">
+      <div class="container footer-container">
+        <div class="footer-left">
+          <a href="./index.html" class="footer-logo">Oleh Subotin</a>
+          <address class="footer-address">
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <a href="mailto:subotinoleg0@gmail.com" class="footer-contact-link">
+                  <svg class="footer-contact-icon" width="16px" height="16px">
+                    <use href="images/sprite.svg#icon-envelop"></use>
+                  </svg>
+                  subotinoleg0@gmail.com
+                </a>
+              </li>
+              <li class="footer-contact-item">
+                <a href="tel:+380508736717" class="footer-contact-link">
+                  <svg class="footer-contact-icon" width="16px" height="16px">
+                    <use href="images/sprite.svg#icon-phone"></use>
+                  </svg>
+                  +38-(050)-873-67-17
+                </a>
+              </li>
+              <li class="footer-contact-item">
+                <a
+                  href="https://goo.gl/maps/dQKAd2vRnwUC3UtE8"
+                  class="footer-contact-link"
+                  target="_blank"
+                >
+                  <svg class="footer-contact-icon" width="16px" height="16px">
+                    <use href="images/sprite.svg#icon-location"></use>
+                  </svg>
+                  Ukraine
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-middle">
+          <h3 class="footer-title">Navigation</h3>
+          <ul class="footer-navigation-list">
+            <li class="footer-navigation-item">
+              <a href="./index.html" class="footer-navigation-link">About</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a href="./projects.html" class="footer-navigation-link">Projects</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a href="./contacts.html" class="footer-navigation-link footer-current">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h3 class="footer-title">Find me on</h3>
+          <ul class="footer-socials-list">
+            <li class="footer-socials-item">
+              <a
+                href="https://github.com/OlegSubotin?tab=repositories"
+                class="footer-socials-link"
+                target="_blank"
+              >
+                <svg class="footer-socials-icon" width="25px" height="25px">
+                  <use href="./images/sprite.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a href="https://telegram.me/subotinO" class="footer-socials-link" target="_blank">
+                <svg class="footer-socials-icon" width="25px" height="25px">
+                  <use href="./images/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a
+                href="https://api.whatsapp.com/send/?phone=380508736717&text=Hi!"
+                class="footer-socials-link"
+                target="_blank"
+              >
+                <svg class="footer-socials-icon" width="25px" height="25px">
+                  <use href="./images/sprite.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a
+                href="https://www.linkedin.com/in/oleh-subotin-2746b2166/"
+                class="footer-socials-link"
+                target="_blank"
+              >
+                <svg class="footer-socials-icon" width="25px" height="25px">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- POPUP -->
+    <div id="popup" class="overlay is-hidden">
+      <div class="popup">
+        <p class="popup-text">Thank you, I will contact you soon &#128521;</p>
+      </div>
+    </div>
+
+    <script src="./js/saver.js" type="module"></script>
+    <script src="./js/sender.js" type="module"></script>
+  </body>
+</html>
